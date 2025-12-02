@@ -1,0 +1,68 @@
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Min Portofolio</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        
+        <nav class="navbar">
+            <div class="navbar-container">
+                <button class="nav-btn2" onclick="scrollToTop()">⌂</button>
+                <button class="nav-btn" onclick="scrollToSection('om-meg')">Om meg</button>
+                <button class="nav-btn" onclick="window.location.href='Prosjekter.html'">
+                Prosjekter</button>
+                <button class="nav-btn" onclick="scrollToSection('kontakt')">Kontakt</button>
+            </div>
+        </nav>
+                
+        <section class="header">
+            <h1>Velkommen!</h1>
+        </section>
+        <section class="info" id="om-meg">
+            <h2>Om meg</h2>
+            <p> Heisann! Mitt navn er Martin, og jeg er den som har laget denne nettsiden.
+                <br> Vanligvis er jeg en veldig hyggelig og trivelig person, men kan være litt rar og
+                <br> litt redd noen ganger (dette er alt din feil "social anxiety >:("). Ellers er jeg
+                <br> veldig interessert i selve teknologi, data og studerer nå IT, som jeg liker
+                <br> veldig mye :D.
+            </p>
+            <p> Jeg har også noen andre interesser, som er gaming og motorsport. Jeg liker
+                <br> veldig godt å spille spill venner, eller alene, kommer an på hvilket spill jeg vil
+                <br> spille. Spiller på konsol og laptop, og de fleste spill kategoriene jeg spiller mest  
+                <br> er roguelites, racing, adventure og action. 
+            </p>
+            <p> Når det kommer til motorsport, så er det formula 1 som jeg er mest interressert i.
+                <br> Jeg prøver å få med meg alle løpenen jeg kan (untatt di som går midt på natten,
+                <br> spesielt når jeg må ta bussen på Søndager), og heier på Ferrari (one day, hopefully).
+                <br> Når det kommer til andre motorsport, så kan vi nok også si litt GT, men ikke
+                <br> så veldig mye.
+            </p>
+        </section>
+        <section class="Kontakt meg" id="kontakt">
+            <h3>Kontakt meg</h3>
+            <p>Har du noen spørsmål om nettsiden min? Ta gjærne kontakt med meg :D
+            <br>Du kan kontakte meg med å sende en epost til steinbakken2003@gmail.com.
+            <br>Skal prøve å svare som fort som mulig :D</p>
+        </section>
+    </body>
+</html>
+
+<script>
+    function scrollToSection(sectionid) {
+        const section = document.getElementById(sectionid)
+        if (section) {
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: 'start'
+            });
+        }
+    }
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+</script>
